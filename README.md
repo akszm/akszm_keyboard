@@ -37,3 +37,7 @@ $ brew install avrdude
 $brew install git
 
 いまここ
+
+？？？FF14をやるとき、logicoolG600でNumキー入力がバグる。なんだろう。
+NumLockがかかっている？？？
+->かかってた。NumLockLockでとりあえず対処
