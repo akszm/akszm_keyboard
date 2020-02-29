@@ -1,13 +1,14 @@
 # akszm_keyboard
 test
+改行をどうするかすらわからないワロタ
 
-#環境
+# 環境
 windows10　->　Virtualbox -> ubuntu 16.04 LTS 64bit
 
 仮想環境ってよくわかってないけど、色んなライブラリ(?)を入れたり消したり、
 最悪OSごと吹き飛ばしていいから楽ちんな気がする。
 
-#CUI でQMK_firmwareのビルドをする手順　おぼえがき
+# CUI でQMK_firmwareのビルドをする手順　おぼえがき
 基本はここ。
 http://biacco42.hatenablog.com/entry/2019/08/10/185624
 
