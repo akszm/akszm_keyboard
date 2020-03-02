@@ -2,6 +2,40 @@
 test
 改行をどうするかすらわからないワロタ
 
+# 20/03/02
+
+# 環境
+windows10　->　Virtualbox -> ubuntu 18.04 LTS 64bit
+                                    ^
+最新のubuntu　LTS版に変更
+
+最新の公式サイトの記述に従っていくこと。
+https://docs.qmk.fm/#/ja/
+qiitaは情報が遅れている場合もあるので気をつける。
+
+# ハマったポイント
+make meishi2:default:avrdude
+でハマった。以下を参照して解決。
+https://qiita.com/zuk2y/items/efed106dad430430060b
+
+
+# 別件；
+コンスルーが半抜けになってた。直接は関係ないが、今後気をつけること。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 20/03/01
 # 環境
 windows10　->　Virtualbox -> ubuntu 16.04 LTS 64bit
 
