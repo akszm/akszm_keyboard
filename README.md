@@ -18,18 +18,27 @@ make meishi2:default:avrdude
 でハマった。以下を参照して解決。
 https://qiita.com/zuk2y/items/efed106dad430430060b
 
+パスを通すときに、参照したサイトそれぞれでフォルダ名が細々違った
+export NRFSDK15_ROOT=~/nRF_SDK_v15.0.0
+                          ^    ^　　　　~~~~~~~~~
+あと.bashrc(?)に書き込みたいけどうまく行かないので、
+terminalを立ち上げるたびに上のexport文を入力する必要あり
 
 # 別件；
 コンスルーが半抜けになってた。直接は関係ないが、今後気をつけること。
 
+# BLE版もコンパイルできた
+ただし、tmk_core/protocol/nrf/matrix.c でエラーを吐いた。
+行564-573をコメントアウトしたらなんか通ったが、これはやったらいけないやつな気がする。
 
-
-
-
-
-
-
-
+以下、エラーはいたときのログ
+Compiling: tmk_core/protocol/nrf/matrix.c                                                          tmk_core/protocol/nrf/matrix.c: In function 'ble_nus_on_disconnect':
+tmk_core/protocol/nrf/matrix.c:567:11: error: array subscript is above array bounds [-Werror=array-bounds]
+     matrix[i + matrix_offset] = 0;
+     ~~~~~~^~~~~~~~~~~~~~~~~~~
+tmk_core/protocol/nrf/matrix.c:567:11: error: array subscript is above array bounds [-Werror=array-bounds]
+cc1: all warnings being treated as errors
+ [ERRORS]
 
 
 
