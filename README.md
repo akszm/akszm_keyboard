@@ -3,8 +3,14 @@ test
 改行をどうするかすらわからないワロタ
 Rawで見ると改行が反映されてるからしばらくはそれで。
 
-# 20/03/02
+# 20/03/03
+BLEの方もうまくコンパイル通った。
+/keyboard/ble/pro_micro_test を参考に、
+直下pro_v1/rules.mk　中に#をいれたらなんか通った。
+  # NRF_SEPARATE = master
+  ^^ 
 
+# 20/03/02
 # 環境
 windows10　->　Virtualbox -> ubuntu 18.04 LTS 64bit
                                     ^
